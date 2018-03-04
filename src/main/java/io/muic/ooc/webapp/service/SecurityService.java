@@ -36,9 +36,9 @@ public class SecurityService {
     
     public boolean authenticate(String username, String password, HttpServletRequest request) {
         updateUserCresedentials();
-        String passwordInDB = userCredentials.get(username).getPassword();
+        String passwordInDB = userCredentials.get(username).getPassword();// hashed password
 
-        boolean isMatched = StringUtils.equals(password, passwordInDB);
+        boolean isMatched = PasswordHasingService.verifyPassword(passwordInDB, password);
         if (isMatched) {
             request.getSession().setAttribute("username", username);
             return true;

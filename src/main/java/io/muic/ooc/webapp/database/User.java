@@ -2,22 +2,16 @@ package io.muic.ooc.webapp.database;
 
 public class User {
 
-    private String username;
+    private String username;//Primary key
     private String password;
     private String firstname;
-    private int id; //Primary key
     private boolean needUpdateFlag;
 
-    public User(String username, String password, String firstname, int id) {
-        this.id = id;
+    public User(String username, String password, String firstname) {
         this.username = username;
         this.password = password;
         this.firstname = firstname;
         needUpdateFlag = false;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getUsername() {
