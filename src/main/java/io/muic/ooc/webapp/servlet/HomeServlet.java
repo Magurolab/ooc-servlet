@@ -6,6 +6,7 @@
 package io.muic.ooc.webapp.servlet;
 
 import io.muic.ooc.webapp.Routable;
+import io.muic.ooc.webapp.database.MySQLDatabase;
 import io.muic.ooc.webapp.service.SecurityService;
 
 import javax.servlet.RequestDispatcher;
@@ -14,6 +15,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class HomeServlet extends HttpServlet implements Routable {
@@ -33,11 +36,14 @@ public class HomeServlet extends HttpServlet implements Routable {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         boolean authorized = securityService.isAuthorized(request);
+
         if (authorized) {
             // do MVC in here
-            String username = (String) request.getSession().getAttribute("username");
-            request.setAttribute("username", username);
-            RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/home.jsp");
+            String currentUser = (String) request.getSession().getAttribute("username");
+
+
+            request.setAttribute("currentUser", currentUser);
+            RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
             rd.include(request, response);
         } else {
             response.sendRedirect("/login");

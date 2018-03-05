@@ -17,7 +17,7 @@ public class LoginServlet extends HttpServlet implements Routable {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/login.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
         rd.include(request, response);
     }
 
@@ -27,19 +27,24 @@ public class LoginServlet extends HttpServlet implements Routable {
         // extract username and password from request
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+
         if (!StringUtils.isBlank(username) && !StringUtils.isBlank(password)) {
-            if (securityService.authenticate(username, password, request)) {
+            int authenticateStatus = securityService.authenticate(username, password, request);
+            if (authenticateStatus == 1) {
                 response.sendRedirect("/");
             } else {
-                String error = "Wrong username or password.";
+                String error;
+                if(authenticateStatus == 2)
+                    error = "Password does not match.";
+                error = "Wrong username.";
                 request.setAttribute("error", error);
-                RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/login.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
                 rd.include(request, response);
             }
         } else {
             String error = "Username or password is missing.";
             request.setAttribute("error", error);
-            RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/login.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
             rd.include(request, response);
         }
 

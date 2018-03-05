@@ -10,6 +10,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="login-webapp" target="1.8" />
+      <module name="ooc-webapp" target="1.8" />
       <module name="webapp" target="1.8" />
     </bytecodeTargetLevel>
   </component>

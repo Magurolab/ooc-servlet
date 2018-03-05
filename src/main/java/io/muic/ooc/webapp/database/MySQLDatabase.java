@@ -3,6 +3,7 @@ package io.muic.ooc.webapp.database;
 import io.muic.ooc.webapp.service.PasswordHasingService;
 
 import java.sql.*;
+
 import java.util.*;
 
 public class MySQLDatabase {
@@ -68,8 +69,18 @@ public class MySQLDatabase {
         return  users;
     }
 
-    public Map<String,User> getUsers(){
+    public Map<String,User> getUsersMap(){
         return updateUsers();
+    }
+
+    public List<User> getUsersList(){
+        users = updateUsers();
+        List<User> data = new ArrayList<>();
+        for(String user : users.keySet()){
+            data.add(users.get(user));
+        }
+        return data;
+
     }
 
 
@@ -112,16 +123,19 @@ public class MySQLDatabase {
 
 
     private void printUsers(){
-        Map<String, User> tmp = this.getUsers();
+        Map<String, User> tmp = this.getUsersMap();
         System.out.println("printing users");
         System.out.println(tmp.keySet());
         System.out.println();
     }
 
     public static void main(String[] args) {
+        // user: poon, 1234
         MySQLDatabase db = new MySQLDatabase();
-
-        db.createNewUser("poon","1234","Poonnarat");
+//        db.createNewUser("ply","1234","plython");
+//        db.createNewUser("boat","1234","autokill");
+//        db.createNewUser("k2","1234","gem");
+        db.createNewUser("atomic", "1234","sunUltraSpark");
 
     }
 

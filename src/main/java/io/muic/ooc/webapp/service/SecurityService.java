@@ -7,10 +7,8 @@ package io.muic.ooc.webapp.service;
 
 import io.muic.ooc.webapp.database.MySQLDatabase;
 import io.muic.ooc.webapp.database.User;
-import org.apache.commons.lang.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -23,7 +21,7 @@ public class SecurityService {
     private Map<String, User> userCredentials;
 
     private void updateUserCresedentials(){
-        userCredentials = database.getUsers();
+        userCredentials = database.getUsersMap();
     }
     
     public boolean isAuthorized(HttpServletRequest request) {
@@ -34,16 +32,19 @@ public class SecurityService {
        return (username != null && userCredentials.containsKey(username));
     }
     
-    public boolean authenticate(String username, String password, HttpServletRequest request) {
+    public int authenticate(String username, String password, HttpServletRequest request) {
         updateUserCresedentials();
-        String passwordInDB = userCredentials.get(username).getPassword();// hashed password
+        User userInDB = userCredentials.get(username);// hashed password
+        if(userInDB == null)
+            return 0;// that user is not in database.
+        String passwordInDB = userInDB.getPassword();// hashed password
 
         boolean isMatched = PasswordHasingService.verifyPassword(passwordInDB, password);
         if (isMatched) {
             request.getSession().setAttribute("username", username);
-            return true;
+            return 1;// match
         } else {
-            return false;
+            return 2;// not match
         }
     }
     

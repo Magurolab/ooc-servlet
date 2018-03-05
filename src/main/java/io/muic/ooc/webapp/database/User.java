@@ -1,6 +1,6 @@
 package io.muic.ooc.webapp.database;
 
-public class User {
+public class User implements Comparable<User>{
 
     private String username;//Primary key
     private String password;
@@ -45,4 +45,8 @@ public class User {
     }
 
 
+    @Override
+    public int compareTo(User u) {
+        return this.getUsername().compareToIgnoreCase(u.getUsername());
+    }
 }
