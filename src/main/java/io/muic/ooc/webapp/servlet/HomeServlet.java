@@ -22,6 +22,7 @@ import java.util.List;
 public class HomeServlet extends HttpServlet implements Routable {
 
     private SecurityService securityService;
+    String currentUser;
 
     @Override
     public String getMapping() {
@@ -39,8 +40,7 @@ public class HomeServlet extends HttpServlet implements Routable {
 
         if (authorized) {
             // do MVC in here
-            String currentUser = (String) request.getSession().getAttribute("username");
-
+            currentUser = (String) request.getSession().getAttribute("username");
 
             request.setAttribute("currentUser", currentUser);
             RequestDispatcher rd = request.getRequestDispatcher("home.jsp");

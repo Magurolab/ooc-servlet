@@ -135,7 +135,8 @@ public class MySQLDatabase {
 //        db.createNewUser("ply","1234","plython");
 //        db.createNewUser("boat","1234","autokill");
 //        db.createNewUser("k2","1234","gem");
-        db.createNewUser("atomic", "1234","sunUltraSpark");
+//        db.createNewUser("atomic", "1234","sunUltraSpark");
+        db.removeUser("");
 
     }
 
