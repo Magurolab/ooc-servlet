@@ -3,3 +3,4 @@
 target
 tomcat*
 dependency-reduce-pom.xml
+dependency-reduced-pom.xml
