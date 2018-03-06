@@ -22,7 +22,7 @@ import java.util.List;
 public class HomeServlet extends HttpServlet implements Routable {
 
     private SecurityService securityService;
-    String currentUser;
+    private String currentUser;
 
     @Override
     public String getMapping() {

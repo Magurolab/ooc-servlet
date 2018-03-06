@@ -121,6 +121,25 @@ public class MySQLDatabase {
         }
     }
 
+    public void updateUserInfoWithSameUsername(String username, String password, String firstname){
+
+        String qry = "UPDATE Users SET firstname = ? ,password = ? WHERE username = ?;";
+        String hashPassword = PasswordHasingService.gethashPassword(password);
+        try {
+            preparedStatement = getConnnection().prepareStatement(qry);
+
+            preparedStatement.setString(1, firstname);
+            preparedStatement.setString(2, hashPassword);
+            preparedStatement.setString(3,username);
+            preparedStatement.executeUpdate();
+
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+
+
 
     private void printUsers(){
         Map<String, User> tmp = this.getUsersMap();

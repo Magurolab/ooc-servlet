@@ -32,8 +32,16 @@ public class AddUserServlet extends HttpServlet implements Routable {
         if (!StringUtils.isBlank(req.getParameter("username"))
                 && !StringUtils.isBlank(req.getParameter("password"))
                 && !StringUtils.isBlank(req.getParameter("firstname"))){
-            userManagementService.addUser(req);
-            resp.sendRedirect("/");
+            boolean addSucess = userManagementService.addUser(req);
+            if(addSucess)
+                resp.sendRedirect("/");
+            else{
+                String error = "That user name is already exist.";
+                req.setAttribute("error", error);
+                RequestDispatcher rd = req.getRequestDispatcher("adduser.jsp");
+                rd.include(req, resp);
+            }
+
         }else{
             String error = "Some information is missing.";
             req.setAttribute("error", error);

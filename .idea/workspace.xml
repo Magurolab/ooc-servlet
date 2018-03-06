@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e98252-ac0d-4d26-a74f-03fc387b00d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/AddUserServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/RemoveServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/adduser.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/confermRemove.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/ServletRouter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/database/MySQLDatabase.class" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/database/MySQLDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/UserManagementService.class" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/UserManagementService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/HomeServlet.class" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/HomeServlet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/EditUserServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/edit.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/UserManagementService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/RemoveServlet.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/confermRemove.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/confirmRemove.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/AddUserServlet.class" afterPath="$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/servlet/AddUserServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/adduser_jsp.class" afterPath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/adduser_jsp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/home_jsp.class" afterPath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/home_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/login_jsp.class" afterPath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/login_jsp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/MySQLDatabase.java" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/MySQLDatabase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserManagementService.java" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserManagementService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/AddUserServlet.java" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/AddUserServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/RemoveServlet.java" afterPath="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/RemoveServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/adduser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/adduser.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/adduser_jsp.java" afterPath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/adduser_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/home_jsp.java" afterPath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/home_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/login_jsp.java" afterPath="$PROJECT_DIR$/tomcat.1234/work/Tomcat/localhost/ROOT/org/apache/jsp/login_jsp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,22 +47,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="adduser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/adduser.jsp">
+      <file leaf-file-name="EditUserServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/EditUserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="15" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="32" selection-end-column="15" />
+            <state relative-caret-position="675">
+              <caret line="45" column="65" lean-forward="false" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2051#2052#0" expanded="true" />
+                <element signature="e#2081#2082#0" expanded="true" />
+                <element signature="e#2166#2167#0" expanded="true" />
+                <element signature="e#2220#2221#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java">
+      <file leaf-file-name="SecurityService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/SecurityService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+            <state relative-caret-position="158">
+              <caret line="34" column="15" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,24 +98,35 @@
       <file leaf-file-name="MySQLDatabase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/MySQLDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="138" column="25" lean-forward="true" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
+            <state relative-caret-position="332">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1520265263829" expanded="true" signature="1114:1160" ph="SELECT usern... Users" />
-                <marker date="1520265263829" expanded="true" signature="2728:2776" ph="INSERT INTO Users... " />
-                <marker date="1520265263829" expanded="true" signature="2728:2790" ph="INSERT INTO Users... " />
-                <marker date="1520265263829" expanded="true" signature="3559:3595" ph="DELETE FROM " />
+                <marker date="1520309909996" expanded="true" signature="1114:1160" ph="SELECT usern... Users" />
+                <marker date="1520309909996" expanded="true" signature="2728:2776" ph="INSERT INTO Users... " />
+                <marker date="1520309909996" expanded="true" signature="2728:2790" ph="INSERT INTO Users... " />
+                <marker date="1520309909996" expanded="true" signature="3559:3595" ph="DELETE FROM " />
+                <marker date="1520309909996" expanded="true" signature="3959:4022" ph="UPDATE Users... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LoginServlet.java">
+      <file leaf-file-name="UserManagementService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserManagementService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="41" selection-end-column="46" />
+            <state relative-caret-position="376">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServletRouter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -97,75 +135,31 @@
       <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServletRouter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+            <state relative-caret-position="61">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoveServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/RemoveServlet.java">
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="336">
+              <caret line="47" column="42" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="47" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddUserServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/AddUserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="42" column="13" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="42" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#1571#1572#0" expanded="true" />
-                <element signature="e#1655#1656#0" expanded="true" />
-                <element signature="e#1709#1710#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="confermRemove.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/confermRemove.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -204,18 +198,22 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserManagementService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/removeUserConfermation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/MySQLDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/adduser.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/AddUserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/confermRemove.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/AddUserServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/adduser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/ServletTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/MySQLDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/confirmRemove.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/RemoveServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserManagementService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/EditUserServlet.java" />
       </list>
     </option>
   </component>
@@ -539,12 +537,12 @@
       <workItem from="1518515401001" duration="4730000" />
       <workItem from="1518529105180" duration="524000" />
       <workItem from="1519031590531" duration="45000" />
-      <workItem from="1520061906604" duration="47844000" />
+      <workItem from="1520061906604" duration="57577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53143000" />
+    <option name="totallyTimeSpent" value="62876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -556,7 +554,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="1440" y="0" width="1366" height="768" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -569,18 +567,18 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12517986" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2877698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0031948881" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="123" width="1240" height="610" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19761668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.004531722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="123" width="1240" height="610" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1971223" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36115107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17252396" sideWeight="0.4919355" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.244713" sideWeight="0.4919355" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2205438" sideWeight="0.5080645" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -638,35 +636,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/io/muic/ooc/webapp/service/SecurityService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/SecurityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#645#646#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -687,11 +656,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -752,11 +717,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -817,11 +778,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,24 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserManagementService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/SecurityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="34" column="15" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/Routable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -963,63 +902,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/AddUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="53" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adduser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="15" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="32" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,60 +918,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/MySQLDatabase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/ServletTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="138" column="25" lean-forward="true" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1520265263829" expanded="true" signature="1114:1160" ph="SELECT usern... Users" />
-            <marker date="1520265263829" expanded="true" signature="2728:2776" ph="INSERT INTO Users... " />
-            <marker date="1520265263829" expanded="true" signature="2728:2790" ph="INSERT INTO Users... " />
-            <marker date="1520265263829" expanded="true" signature="3559:3595" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="41" selection-end-column="46" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/confermRemove.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/adduser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        <state relative-caret-position="135">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/confirmRemove.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/RemoveServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="412">
+          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1571#1572#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
+            <element signature="e#1564#1565#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/ServletRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/AddUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/UserManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/database/MySQLDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1520309909996" expanded="true" signature="1114:1160" ph="SELECT usern... Users" />
+            <marker date="1520309909996" expanded="true" signature="2728:2776" ph="INSERT INTO Users... " />
+            <marker date="1520309909996" expanded="true" signature="2728:2790" ph="INSERT INTO Users... " />
+            <marker date="1520309909996" expanded="true" signature="3559:3595" ph="DELETE FROM " />
+            <marker date="1520309909996" expanded="true" signature="3959:4022" ph="UPDATE Users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/service/SecurityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="34" column="15" lean-forward="false" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="47" column="42" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="47" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/muic/ooc/webapp/servlet/EditUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="65" lean-forward="false" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
           </folding>
         </state>
       </provider>

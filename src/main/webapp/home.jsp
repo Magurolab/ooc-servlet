@@ -32,6 +32,7 @@
             <th scope="col">Username</th>
             <th scope="col">Firstname</th>
             <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
@@ -48,12 +49,27 @@
                 </td>
                 <td><%= user.getFirstname() %>
                 </td>
+
                 <td>
-                    <form action="/remove" method="get">
+                    <form action="/edit" method="get">
                         <input type="hidden" name="targetUser" value="<%=user.getUsername()%>"/>
-                        <button type="submit" class="btn btn-outline-primary">Remove</button>
+                        <input type="hidden" name="currentUser" value=${currentUser}/>
+                        <button type="submit" class="btn btn-outline-primary">Edit</button>
                     </form>
                 </td>
+
+                <td>
+                    <% String curr = (String) request.getAttribute("currentUser");
+                        if (!user.getUsername().equals(curr)) { %>
+                            <form action="/remove" method="get">
+                                <input type="hidden" name="targetUser" value="<%=user.getUsername()%>"/>
+                                <button type="submit" class="btn btn-outline-primary">Remove</button>
+                            </form>
+                    <%
+                        }
+                    %>
+                </td>
+
 
 
         <%

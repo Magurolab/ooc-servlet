@@ -16,6 +16,7 @@
         <div style="width:400px;">
             <div style="float: left; width: 130px;padding-left: 80px">
                 <form action="/remove" method="post" >
+                    <input type="hidden" name="targetUser" value=${targetUser}/>
                     <input type="submit" value="Yes" style="display: inline">
                 </form>
             </div>

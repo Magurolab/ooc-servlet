@@ -28,6 +28,7 @@ public class ServletRouter {
         routables.add(AddUserServlet.class);
         routables.add(LogoutServlet.class);
         routables.add(RemoveServlet.class);
+        routables.add(EditUserServlet.class);
 
     }
 

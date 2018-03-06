@@ -15,6 +15,7 @@
     <center>
         <h2>Register</h2>
         <p>${error}</p>
+
         <form action="/adduser" method="post">
             Username:<br/>
             <input type="text" name="username"/>
