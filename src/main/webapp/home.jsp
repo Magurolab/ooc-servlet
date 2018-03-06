@@ -63,6 +63,7 @@
                         if (!user.getUsername().equals(curr)) { %>
                             <form action="/remove" method="get">
                                 <input type="hidden" name="targetUser" value="<%=user.getUsername()%>"/>
+                                <input type="hidden" name="currentUser" value=${currentUser} />
                                 <button type="submit" class="btn btn-outline-primary">Remove</button>
                             </form>
                     <%

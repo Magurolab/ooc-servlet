@@ -15,6 +15,7 @@ import java.io.IOException;
 public class RemoveServlet extends HttpServlet implements Routable {
     private SecurityService securityService;
     private String targetUser;
+    private String currentUser;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,7 +24,9 @@ public class RemoveServlet extends HttpServlet implements Routable {
         if(authorized){
             RequestDispatcher rd = request.getRequestDispatcher("confirmRemove.jsp");
             targetUser = request.getParameter("targetUser");
+            currentUser = request.getParameter("currentUser");
             request.setAttribute("targetUser", targetUser);
+            request.setAttribute("currentUser", currentUser);
             rd.include(request, response);
 
         }else{
@@ -35,9 +38,13 @@ public class RemoveServlet extends HttpServlet implements Routable {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UserManagementService userManagementService = new UserManagementService();
-        userManagementService.removeUser(targetUser);
-        System.out.println("kill!");
+        System.out.println(currentUser);
+        System.out.println(targetUser);
+        if(!targetUser.equals(currentUser)){
+            userManagementService.removeUser(targetUser);
+        }
         resp.sendRedirect("/");
+
 
     }
 
