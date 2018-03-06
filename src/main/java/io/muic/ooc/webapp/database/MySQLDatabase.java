@@ -7,9 +7,13 @@ import java.sql.*;
 import java.util.*;
 
 public class MySQLDatabase {
+    //my local
+//    private static String dbURL = "jdbc:mysql://localhost/oocServlet?useSSL=false";
+//    private static String dbUser = "poon.";
+//    private static String dbPass = "why";
     private static String dbURL = "jdbc:mysql://localhost/oocServlet?useSSL=false";
-    private static String dbUser = "poon.";
-    private static String dbPass = "why";
+    private static String dbUser = "poon";
+    private static String dbPass = "poon12345";
 
     Connection connection = null;
     private PreparedStatement preparedStatement;
