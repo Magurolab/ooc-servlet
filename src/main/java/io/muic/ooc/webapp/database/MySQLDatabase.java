@@ -155,11 +155,11 @@ public class MySQLDatabase {
     public static void main(String[] args) {
         // user: poon, 1234
         MySQLDatabase db = new MySQLDatabase();
-//        db.createNewUser("ply","1234","plython");
+        db.createNewUser("ply","1234","plython");
 //        db.createNewUser("boat","1234","autokill");
 //        db.createNewUser("k2","1234","gem");
 //        db.createNewUser("atomic", "1234","sunUltraSpark");
-        db.removeUser("");
+        
 
     }
 
