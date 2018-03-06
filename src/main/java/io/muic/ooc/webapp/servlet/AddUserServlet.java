@@ -34,7 +34,7 @@ public class AddUserServlet extends HttpServlet implements Routable {
                 && !StringUtils.isBlank(req.getParameter("firstname"))){
             boolean addSucess = userManagementService.addUser(req);
             if(addSucess)
-                resp.sendRedirect("/");
+                resp.sendRedirect("/users");
             else{
                 String error = "That user name is already exist.";
                 req.setAttribute("error", error);

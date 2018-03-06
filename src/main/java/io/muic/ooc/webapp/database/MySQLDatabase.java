@@ -93,7 +93,7 @@ public class MySQLDatabase {
         String hashedPassword = PasswordHasingService.gethashPassword(password);
 
         try {
-            preparedStatement = connection.prepareStatement("INSERT INTO Users(username, password, firstname) VALUES(?,?,?);");
+            preparedStatement = connection.prepareStatement(" VALUES(?,?,?);");
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, hashedPassword);
             preparedStatement.setString(3, firstname);
@@ -159,7 +159,7 @@ public class MySQLDatabase {
 //        db.createNewUser("boat","1234","autokill");
 //        db.createNewUser("k2","1234","gem");
 //        db.createNewUser("atomic", "1234","sunUltraSpark");
-        
+
 
     }
 
