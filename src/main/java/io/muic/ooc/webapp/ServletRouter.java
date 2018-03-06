@@ -23,12 +23,13 @@ public class ServletRouter {
     private static final List<Class<? extends Routable>> routables = new ArrayList<>();
 
     static {
-        routables.add(HomeServlet.class);
+        routables.add(UsersServlet.class);
         routables.add(LoginServlet.class);
         routables.add(AddUserServlet.class);
         routables.add(LogoutServlet.class);
         routables.add(RemoveServlet.class);
         routables.add(EditUserServlet.class);
+        routables.add(HomeServlet.class);
 
     }
 
