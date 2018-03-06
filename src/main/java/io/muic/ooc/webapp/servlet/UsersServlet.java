@@ -43,7 +43,7 @@ public class UsersServlet extends HttpServlet implements Routable {
             currentUser = (String) request.getSession().getAttribute("username");
 
             request.setAttribute("currentUser", currentUser);
-            RequestDispatcher rd = request.getRequestDispatcher("users.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("/users.jsp");
             rd.include(request, response);
         } else {
             response.sendRedirect("/login");

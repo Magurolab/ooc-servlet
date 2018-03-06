@@ -38,14 +38,14 @@ public class AddUserServlet extends HttpServlet implements Routable {
             else{
                 String error = "That user name is already exist.";
                 req.setAttribute("error", error);
-                RequestDispatcher rd = req.getRequestDispatcher("adduser.jsp");
+                RequestDispatcher rd = req.getRequestDispatcher("/adduser.jsp");
                 rd.include(req, resp);
             }
 
         }else{
             String error = "Some information is missing.";
             req.setAttribute("error", error);
-            RequestDispatcher rd = req.getRequestDispatcher("adduser.jsp");
+            RequestDispatcher rd = req.getRequestDispatcher("/adduser.jsp");
             rd.include(req, resp);
         }
     }
@@ -55,7 +55,7 @@ public class AddUserServlet extends HttpServlet implements Routable {
         boolean authorized = securityService.isAuthorized(request);
         if(authorized){
 
-            RequestDispatcher rd = request.getRequestDispatcher("adduser.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("/adduser.jsp");
             rd.include(request, response);
         }else{
             response.sendRedirect("/login");

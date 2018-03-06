@@ -21,7 +21,7 @@ public class EditUserServlet extends HttpServlet implements Routable {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         boolean authorized = securityService.isAuthorized(request);
         if(authorized){
-            RequestDispatcher rd = request.getRequestDispatcher("edit.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("/edit.jsp");
             targetUser = request.getParameter("targetUser");
             currentUser = request.getParameter("currentUser");
             request.setAttribute("targetUser", targetUser);
@@ -43,7 +43,7 @@ public class EditUserServlet extends HttpServlet implements Routable {
         }else {
             error = "Some information is missing.";
             req.setAttribute("error", error);
-            RequestDispatcher rd = req.getRequestDispatcher("edit.jsp");
+            RequestDispatcher rd = req.getRequestDispatcher("/edit.jsp");
             rd.include(req, resp);
         }
     }
