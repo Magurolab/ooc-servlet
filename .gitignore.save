@@ -1,0 +1,6 @@
+.idea
+*.iml
+target
+tomcat*
+dependency-reduced-pom.xml
+.DS_Store
